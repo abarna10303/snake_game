@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+.container{
+    width: 65vmin;
+    height: 70vmin;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+.details-board{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 27px;
+    background-color: rgb(27, 27, 27);
+}
+.game-board{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template: repeat(30,1fr)/repeat(30,1fr);
+}
+.snack-food{
+    background-color: brown;
+    border-radius: 50%;
+}
+.snack{
+    background-color: green;
+}
+.game-over{
+    position: absolute;
+    top:25%;
+    right: 25%;
+    left: 25%;
+    bottom: 25%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.game-over span{
+    color: rgb(226, 64, 64);
+    display: block;
+    margin-bottom: 20px;
+}
+.game-over button{
+    display: block;
+    border: none;
+    background-color: green;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
