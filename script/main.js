@@ -7,7 +7,7 @@ $(document).ready(function(){
     $('.game-over').hide();
     $('.high-score').html(`High Score ${localStorage.getItem("HightScore")}`)
     foodPosition();
-    setIntervalID=setInterval(startGame,300);
+    setIntervalID=setInterval(startGame,150);
     $(document).keydown(snackDerection);
 });
 function foodPosition(){
